@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Recipes | GreenBite</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/recipes.css" />
+    <link
+      rel="icon"
+      href="./assets/GreenBite logo.png"
+      type="image/x-icon"
+      sizes="60x60"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="./assets/GreenBite logo.png"
+            alt="GreenBite Logo"
+            class="logo-img"
+          />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./recipes.html" class="nav-link active">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#calculator" class="nav-link">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a href="#workout" class="nav-link">Workout</a>
+          </li>
+          <li class="nav-item">
+            <a href="#mindfulness" class="nav-link">Mindfulness</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Recipes Section -->
+    <main>
+      <section class="recipes-section">
+        <h1>Healthy Recipes</h1>
+        <input type="text" id="searchBar" placeholder="Search recipes..." />
+
+        <div id="recipesContainer" class="recipes-container"></div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" alt="" />
+        <p id="modalDescription"></p>
+
+        <h3>Ingredients</h3>
+        <ul id="modalIngredients"></ul>
+
+        <h3>Steps</h3>
+        <ol id="modalSteps"></ol>
+
+        <h3>Nutrition Info</h3>
+        <table id="modalNutrition"></table>
+      </div>
+    </div>
+
+    <script src="JS/recipes.js"></script>
+  </body>
+</html>

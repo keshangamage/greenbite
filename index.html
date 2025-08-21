@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenBite</title>
-    <link rel="stylesheet" href="./CSS/homepage.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
     <link
       rel="icon"
       href="./assets/GreenBite logo.png"
@@ -27,7 +28,7 @@
             <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#recipes" class="nav-link">Recipes</a>
+            <a href="./recipes.html" class="nav-link">Recipes</a>
           </li>
           <li class="nav-item">
             <a href="#calculator" class="nav-link">Calculator</a>
@@ -45,8 +46,130 @@
       </div>
     </nav>
 
-    <main>
-      <h1>Welcome to GreenBite</h1>
+    <main class="hero-section">
+      <h1>Welcome to <span class="green-text">GreenBite</span></h1>
+      <h3>Your Journey to Vibrant Health Starts Here</h3>
+      <div class="hero-buttons">
+        <a href="./Pages/Recipes.html" class="hero-button first"
+          >Start Your Journey</a
+        >
+        <button class="hero-button second">Learn More</button>
+      </div>
     </main>
+
+    <section class="features-section">
+      <div class="container">
+        <h2>Your Daily Wellness Boost</h2>
+        <p class="section-description">
+          Explore our comprehensive tools and resources designed to support your
+          healthy lifestyle journey.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🥗</div>
+            <h3>Healthy Recipes</h3>
+            <p>Discover nutritious and delicious meal ideas</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚖️</div>
+            <h3>Calorie Calculator</h3>
+            <p>Track your daily nutritional needs</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💪</div>
+            <h3>Workout Plans</h3>
+            <p>Get personalized exercise routines</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🧘</div>
+            <h3>Mindfulness</h3>
+            <p>Practice meditation and breathing exercises</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated with GreenBite</h2>
+          <p>
+            Get weekly wellness tips, healthy recipes, and exclusive content
+            delivered to your inbox
+          </p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/GreenBite logo.png"
+                alt="GreenBite Logo"
+                class="footer-logo-img"
+              />
+              <h3>GreenBite</h3>
+            </div>
+            <p>
+              Empowering your wellness journey through balanced nutrition,
+              mindful movement, and holistic health practices. Transform your
+              life one healthy choice at a time.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link facebook">ⓕ</a>
+              <a href="https://twitter.com" class="social-link twitter">𝕏</a>
+              <a href="https://instagram.com" class="social-link instagram"
+                >🅾</a
+              >
+              <a href="https://youtube.com" class="social-link youtube">[in]</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#calculator">Calculator</a></li>
+              <li><a href="#workout">Workout</a></li>
+              <li><a href="#mindfulness">Mindfulness</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <p>Email: hello@greenbite.com</p>
+              <p>Phone: +94 123 345 45</p>
+              <p>Address: 123 Sri Lanka, Colombo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 GreenBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
