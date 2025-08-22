@@ -3,7 +3,7 @@ const recipes = [
   {
     title: "Avocado Salad",
     description: "A refreshing salad packed with healthy fats.",
-    image: "images/avocado-salad.jpg",
+    image: "assets/avocado-salad.webp",
     ingredients: ["2 Avocados", "1 Tomato", "1 Cucumber", "Olive oil", "Salt"],
     steps: [
       "Chop veggies",
@@ -16,10 +16,30 @@ const recipes = [
   {
     title: "Grilled Chicken",
     description: "Lean protein for muscle building.",
-    image: "images/grilled-chicken.jpg",
+    image: "assets/grilled-chicken.webp",
     ingredients: ["200g Chicken breast", "Salt", "Pepper", "Olive oil"],
     steps: ["Marinate chicken", "Grill for 6-8 minutes each side", "Serve hot"],
     nutrition: { Calories: "300", Protein: "35g", Carbs: "2g", Fat: "15g" },
+  },
+  {
+    title: "Green Smoothie Bowl",
+    description: "Nutrient-packed breakfast bowl with fresh fruits.",
+    image: "assets/green-smoothie-bowl.webp",
+    ingredients: [
+      "1 Banana",
+      "1 Cup Spinach",
+      "1/2 Avocado",
+      "Coconut milk",
+      "Berries",
+      "Chia seeds",
+    ],
+    steps: [
+      "Blend banana, spinach, and avocado with coconut milk",
+      "Pour into bowl",
+      "Top with berries and chia seeds",
+      "Serve immediately",
+    ],
+    nutrition: { Calories: "320", Protein: "8g", Carbs: "45g", Fat: "12g" },
   },
 ];
 
@@ -43,8 +63,14 @@ function displayRecipes(list) {
     card.className = "recipe-card";
     card.innerHTML = `
       <img src="${recipe.image}" alt="${recipe.title}">
-      <h3>${recipe.title}</h3>
-      <p>${recipe.description}</p>
+      <div class="card-content">
+        <h3>${recipe.title}</h3>
+        <p>${recipe.description}</p>
+        <div class="card-footer">
+          <span class="difficulty">Easy</span>
+          <span class="time">15 min</span>
+        </div>
+      </div>
     `;
     card.addEventListener("click", () => openModal(recipe));
     container.appendChild(card);
