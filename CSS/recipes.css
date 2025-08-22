@@ -201,6 +201,27 @@ body::after {
   position: relative;
 }
 
+.category-badge {
+  position: absolute;
+  top: -30px;
+  right: 15px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(59, 130, 246, 0.3);
+  border: 2px solid white;
+  z-index: 10;
+}
+
+.category-badge::first-letter {
+  text-transform: uppercase;
+}
+
 .recipe-card h3 {
   margin: 0 0 12px 0;
   font-size: 22px;

@@ -1,10 +1,11 @@
 const recipes = [
   {
     title: "Avocado Salad",
-    description: "A refreshing salad packed with healthy fats.",
+    description:
+      "Fresh avocado salad with cucumber, tomato, olive oil, healthy and delicious.",
     image: "assets/avocado-salad.webp",
     category: "salad",
-    tags: ["healthy", "fresh", "vegetarian", "lunch"],
+
     ingredients: ["2 Avocados", "1 Tomato", "1 Cucumber", "Olive oil", "Salt"],
     steps: [
       "Chop veggies",
@@ -16,20 +17,22 @@ const recipes = [
   },
   {
     title: "Grilled Chicken",
-    description: "Lean protein for muscle building.",
+    description:
+      "Juicy grilled chicken breast seasoned perfectly, tender inside, smoky outside.",
     image: "assets/grilled-chicken.webp",
     category: "protein",
-    tags: ["high-protein", "muscle-building", "dinner", "lunch"],
+
     ingredients: ["200g Chicken breast", "Salt", "Pepper", "Olive oil"],
     steps: ["Marinate chicken", "Grill for 6-8 minutes each side", "Serve hot"],
     nutrition: { Calories: "300", Protein: "35g", Carbs: "2g", Fat: "15g" },
   },
   {
     title: "Green Smoothie Bowl",
-    description: "Nutrient-packed breakfast bowl with fresh fruits.",
+    description:
+      "Nutritious green smoothie bowl topped with fruits, seeds, and nuts.",
     image: "assets/green-smoothie-bowl.webp",
     category: "smoothie",
-    tags: ["breakfast", "energizing", "antioxidants", "vegan"],
+
     ingredients: [
       "1 Banana",
       "1 Cup Spinach",
@@ -48,10 +51,11 @@ const recipes = [
   },
   {
     title: "Quinoa Power Salad",
-    description: "Protein-rich superfood salad for sustained energy.",
-    image: "assets/avocado-salad.webp",
+    description:
+      "Protein-rich quinoa salad with veggies, herbs, and light zesty dressing.",
+    image: "assets/quinoa-power-salad.webp",
     category: "salad",
-    tags: ["protein", "superfood", "lunch", "dinner"],
+
     ingredients: [
       "1 Cup Quinoa",
       "Mixed greens",
@@ -70,10 +74,11 @@ const recipes = [
   },
   {
     title: "Berry Protein Smoothie",
-    description: "Post-workout smoothie loaded with antioxidants.",
-    image: "assets/green-smoothie-bowl.webp",
+    description:
+      "Refreshing smoothie with mixed berries, protein boost, creamy and energizing.",
+    image: "assets/berry-protein-smoothie.webp",
     category: "smoothie",
-    tags: ["breakfast", "post-workout", "protein", "antioxidants"],
+
     ingredients: [
       "1 Cup Mixed berries",
       "Protein powder",
@@ -91,10 +96,11 @@ const recipes = [
   },
   {
     title: "Salmon Teriyaki",
-    description: "Omega-3 rich salmon with Asian flavors.",
-    image: "assets/grilled-chicken.webp",
+    description:
+      "Glazed salmon fillet with teriyaki sauce, savory, sweet, healthy dish.",
+    image: "assets/salmon-teriyaki.webp",
     category: "protein",
-    tags: ["omega-3", "dinner", "asian", "healthy-fats"],
+
     ingredients: [
       "200g Salmon fillet",
       "Teriyaki sauce",
@@ -110,6 +116,79 @@ const recipes = [
       "Garnish with green onions",
     ],
     nutrition: { Calories: "420", Protein: "35g", Carbs: "25g", Fat: "22g" },
+  },
+
+  {
+    title: "Oatmeal with Berries",
+    description:
+      "Wholesome oatmeal topped with fresh berries, nuts, honey, healthy and energizing.",
+    image: "assets/oatmeal-berries.webp",
+    category: "breakfast",
+
+    ingredients: [
+      "1 cup rolled oats",
+      "2 cups milk or water",
+      "1/2 cup mixed berries",
+      "1 tbsp honey",
+      "Handful of nuts",
+    ],
+    steps: [
+      "Cook oats in milk or water until soft",
+      "Spoon into a bowl",
+      "Top with berries and nuts",
+      "Drizzle honey before serving",
+    ],
+    nutrition: { Calories: "320", Protein: "9g", Carbs: "55g", Fat: "8g" },
+  },
+
+  {
+    title: "Grilled Chicken Wrap",
+    description:
+      "Soft tortilla filled with grilled chicken, veggies, hummus, protein-packed healthy meal.",
+    image: "assets/grilled-chicken-wrap.webp",
+    category: "lunch",
+
+    ingredients: [
+      "1 tortilla wrap",
+      "100g grilled chicken breast",
+      "Lettuce",
+      "Tomato slices",
+      "2 tbsp hummus",
+    ],
+    steps: [
+      "Grill chicken breast until cooked",
+      "Warm tortilla wrap",
+      "Spread hummus on tortilla",
+      "Add chicken and veggies",
+      "Roll tightly and serve",
+    ],
+    nutrition: { Calories: "400", Protein: "32g", Carbs: "35g", Fat: "14g" },
+  },
+
+  {
+    title: "Baked Salmon with Veggies",
+    description:
+      "Tender baked salmon served with roasted vegetables, light, healthy, flavorful dinner option.",
+    image: "assets/baked-salmon-veggies.webp",
+    category: "dinner",
+
+    ingredients: [
+      "1 salmon fillet",
+      "1 cup broccoli",
+      "1 carrot",
+      "1 zucchini",
+      "Olive oil",
+      "Salt",
+      "Pepper",
+    ],
+    steps: [
+      "Preheat oven to 180°C",
+      "Season salmon with salt, pepper, olive oil",
+      "Chop vegetables evenly",
+      "Place salmon and veggies on tray",
+      "Bake for 20 minutes",
+    ],
+    nutrition: { Calories: "450", Protein: "38g", Carbs: "20g", Fat: "22g" },
   },
 ];
 
@@ -179,12 +258,9 @@ function displayRecipes(list) {
     card.innerHTML = `
       <img src="${recipe.image}" alt="${recipe.title}">
       <div class="card-content">
+        <div class="category-badge">${recipe.category}</div>
         <h3>${recipe.title}</h3>
         <p>${recipe.description}</p>
-        <div class="recipe-tags">
-          <span class="tag">${recipe.tags[0]}</span>
-          <span class="tag">${recipe.tags[1]}</span>
-        </div>
         <div class="card-footer">
           <span class="difficulty">Easy</span>
           <span class="time">15 min</span>
