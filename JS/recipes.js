@@ -142,6 +142,27 @@ const recipes = [
   },
 
   {
+    title: "Greek Yogurt Parfait",
+    description:
+      "Creamy Greek yogurt layered with granola, fresh fruits, healthy and energizing start.",
+    image: "assets/greek-yogurt-parfait.webp",
+    category: "breakfast",
+    ingredients: [
+      "1 cup Greek yogurt",
+      "1/2 cup granola",
+      "1/2 cup mixed berries",
+      "1 tbsp honey",
+    ],
+    steps: [
+      "Spoon Greek yogurt into a bowl or glass",
+      "Layer with granola and berries",
+      "Drizzle honey on top",
+      "Serve immediately",
+    ],
+    nutrition: { Calories: "300", Protein: "15g", Carbs: "40g", Fat: "8g" },
+  },
+
+  {
     title: "Grilled Chicken Wrap",
     description:
       "Soft tortilla filled with grilled chicken, veggies, hummus, protein-packed healthy meal.",
@@ -163,6 +184,58 @@ const recipes = [
       "Roll tightly and serve",
     ],
     nutrition: { Calories: "400", Protein: "32g", Carbs: "35g", Fat: "14g" },
+  },
+
+  {
+    title: "Mediterranean Chickpea Salad",
+    description:
+      "Colorful chickpea salad with veggies, olives, feta, light healthy satisfying lunch.",
+    image: "assets/mediterranean-chickpea-salad.webp",
+    category: "lunch",
+    ingredients: [
+      "1 cup chickpeas (cooked or canned)",
+      "1/2 cup cherry tomatoes",
+      "1/2 cucumber",
+      "1/4 cup feta cheese",
+      "Olives",
+      "Olive oil",
+      "Lemon juice",
+      "Salt",
+      "Pepper",
+    ],
+    steps: [
+      "Chop tomatoes and cucumber",
+      "Mix chickpeas, veggies, olives, and feta in a bowl",
+      "Drizzle with olive oil and lemon juice",
+      "Season with salt and pepper",
+      "Toss gently and serve",
+    ],
+    nutrition: { Calories: "380", Protein: "15g", Carbs: "40g", Fat: "18g" },
+  },
+
+  {
+    title: "Grilled Lemon Herb Chicken",
+    description:
+      "Juicy grilled chicken marinated with lemon and herbs, healthy and flavorful dinner.",
+    image: "assets/grilled-lemon-herb-chicken.webp",
+    category: "dinner",
+    ingredients: [
+      "2 chicken breasts",
+      "1 lemon (juice and zest)",
+      "1 tbsp olive oil",
+      "1 tsp garlic powder",
+      "1 tsp dried herbs",
+      "Salt",
+      "Pepper",
+    ],
+    steps: [
+      "Mix lemon juice, zest, olive oil, garlic, herbs, salt, pepper",
+      "Marinate chicken for at least 30 minutes",
+      "Preheat grill or pan",
+      "Grill chicken until cooked through and golden",
+      "Serve hot with vegetables or salad",
+    ],
+    nutrition: { Calories: "430", Protein: "35g", Carbs: "5g", Fat: "28g" },
   },
 
   {
@@ -189,6 +262,31 @@ const recipes = [
       "Bake for 20 minutes",
     ],
     nutrition: { Calories: "450", Protein: "38g", Carbs: "20g", Fat: "22g" },
+  },
+
+  {
+    title: "Stir-Fried Tofu and Veggies",
+    description:
+      "Crispy tofu stir-fried with colorful vegetables, light, healthy, and protein-rich dinner.",
+    image: "assets/stir-fried-tofu-and-veggies.webp",
+    category: "dinner",
+    ingredients: [
+      "200g firm tofu",
+      "1 cup broccoli",
+      "1 carrot",
+      "1 bell pepper",
+      "Soy sauce",
+      "Olive oil",
+      "Garlic",
+    ],
+    steps: [
+      "Press and cube tofu",
+      "Heat oil in pan, sauté garlic",
+      "Add tofu, cook until golden",
+      "Add vegetables, stir-fry until tender",
+      "Season with soy sauce and serve",
+    ],
+    nutrition: { Calories: "400", Protein: "25g", Carbs: "30g", Fat: "18g" },
   },
 ];
 
