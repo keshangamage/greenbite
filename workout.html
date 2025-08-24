@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout | GreenBite</title>
+    <title>GreenBite</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/workout.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
     <link
       rel="icon"
       href="./assets/GreenBite logo.png"
@@ -45,7 +46,108 @@
         </ul>
       </div>
     </nav>
+    <main>
+      <section class="workout-section">
+        <h1>Workout Generator</h1>
+        <h3>Generate personalized workout plans based on your preference</h3>
 
-    <h1>hi</h1>
+        <div class="form-container">
+          <form id="workout-form" class="workout-form">
+            <div class="input-group">
+              <label for="body-part">Choose Body Part</label>
+              <select id="body-part" required>
+                <option value="">--Select Body Part--</option>
+                <option value="arms">💪 Arms</option>
+                <option value="legs">🦵 Legs</option>
+                <option value="full">🏃‍♂️ Full Body</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="equipment">Choose Equipment</label>
+              <select id="equipment" required>
+                <option value="">--Select Equipment--</option>
+                <option value="none">🚫 No Equipment</option>
+                <option value="dumbbells">🏋️‍♂️ Dumbbells</option>
+              </select>
+            </div>
+
+            <button type="submit" class="generate-btn">
+              <span>Generate Workout Plan</span>
+              <span class="btn-icon">🎯</span>
+            </button>
+          </form>
+        </div>
+
+        <div id="workout-container" class="workout-container hidden">
+          <div id="workout-plan" class="workout-plan"></div>
+          <div id="timer" class="timer">
+            <h3 id="exercise-name"></h3>
+            <p>Time Left: <span id="time-left">30</span>s</p>
+            <div class="timer-controls">
+              <button id="start-timer">Start</button>
+              <button id="reset-timer">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/GreenBite logo.png"
+                alt="GreenBite Logo"
+                class="footer-logo-img"
+              />
+              <h3>GreenBite</h3>
+            </div>
+            <p>
+              Empowering your wellness journey through balanced nutrition,
+              mindful movement, and holistic health practices. Transform your
+              life one healthy choice at a time.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link facebook">ⓕ</a>
+              <a href="https://twitter.com" class="social-link twitter">𝕏</a>
+              <a href="https://instagram.com" class="social-link instagram"
+                >🅾</a
+              >
+              <a href="https://youtube.com" class="social-link youtube">[in]</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#calculator">Calculator</a></li>
+              <li><a href="#workout">Workout</a></li>
+              <li><a href="#mindfulness">Mindfulness</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <p>Email: hello@greenbite.com</p>
+              <p>Phone: +94 123 345 45</p>
+              <p>Address: 123 Sri Lanka, Colombo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 GreenBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/workout.js"></script>
   </body>
 </html>

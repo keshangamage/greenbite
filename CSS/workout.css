@@ -1,0 +1,242 @@
+body::before {
+  display: none !important;
+}
+
+body::after {
+  display: none !important;
+}
+
+.workout-section {
+  padding: 40px 32px;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.workout-section h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1dbc57;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workout-section h3 {
+  font-size: 17px;
+  color: #64748b;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+}
+
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.input-group select {
+  padding: 16px 20px;
+  font-size: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #374151;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 48px;
+}
+
+.input-group select:focus {
+  outline: none;
+  border-color: #1dbc57;
+  box-shadow: 0 0 0 3px rgba(29, 188, 87, 0.1);
+}
+
+.input-group select:hover {
+  border-color: #1dbc57;
+}
+
+.generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 32px;
+  background: #18a74d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.generate-btn:hover {
+  background: #13a248;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(29, 188, 87, 0.3);
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+.workout-container {
+  max-width: 700px;
+  margin: 40px auto 0;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+  overflow: hidden;
+}
+
+/* Workout Plan */
+.workout-plan {
+  padding: 32px;
+  background: #dcfce7;
+  text-align: left;
+}
+
+.workout-plan h2 {
+  color: #166534;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.workout-plan .exercise {
+  background: white;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border-left: 4px solid #1dbc57;
+}
+
+.workout-plan .exercise h3 {
+  color: #374151;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.workout-plan .exercise p {
+  color: #6b7280;
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+/* Timer Section */
+.timer {
+  padding: 32px;
+  background: #fde68a;
+  text-align: center;
+  border-top: 1px solid #f4be36;
+}
+
+.timer h3 {
+  color: #92400e;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.timer p {
+  color: #78350f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.timer #time-left {
+  font-size: 24px;
+  font-weight: 800;
+  color: #b45309;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.timer button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#start-timer {
+  background: #1dbc57;
+  color: white;
+}
+
+#start-timer:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(29, 188, 87, 0.3);
+}
+
+#reset-timer {
+  background: #ef4444;
+  color: white;
+}
+
+#reset-timer:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
+.timer button:active {
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}

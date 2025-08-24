@@ -1,0 +1,200 @@
+body::before {
+  display: none !important;
+}
+
+body::after {
+  display: none !important;
+}
+
+.calculator-section h1 {
+  font-size: 38px;
+  font-weight: 800;
+
+  color: #1dbc57;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-section {
+  padding: 40px 32px;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.calculator-section h3 {
+  font-size: 17px;
+  color: #64748b;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.calculator-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid rgba(29, 188, 87, 0.1);
+}
+
+.calculator-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#calcForm {
+  display: grid;
+  gap: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#calcForm label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#calcForm input,
+#calcForm select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  height: 42px;
+  appearance: none;
+}
+
+#calcForm select {
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+#calcForm input:focus,
+#calcForm select:focus {
+  outline: none;
+  border-color: #1dbc57;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(29, 188, 87, 0.1);
+  transform: translateY(-1px);
+}
+
+#calcForm button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #16a249;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(29, 188, 87, 0.3);
+}
+
+#calcForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 188, 87, 0.4);
+  background: #0c973f;
+}
+
+#calcForm button:active {
+  transform: translateY(0);
+}
+
+#calcForm button.loading {
+  background: #6b7280;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(156, 163, 175, 0.3);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background: #e9ecef;
+  border-radius: 12px;
+  border: 2px solid rgba(29, 188, 87, 0.1);
+}
+
+.result h3 {
+  color: #1a202c;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.result p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #374151;
+}
+
+.result h4 {
+  margin: 25px 0 15px 0;
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bar {
+  height: 30px;
+  border-radius: 15px;
+  margin: 15px 0;
+  background: #e5e7eb;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bar-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: width 0.8s ease-in-out;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.carbs {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+.protein {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+.fat {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}

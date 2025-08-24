@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenBite</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/calculator.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link
+      rel="icon"
+      href="./assets/GreenBite logo.png"
+      type="image/x-icon"
+      sizes="60x60"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="./assets/GreenBite logo.png"
+            alt="GreenBite Logo"
+            class="logo-img"
+          />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./recipes.html" class="nav-link">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a href="./calculator.html" class="nav-link active">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a href="./workout.html" class="nav-link">Workout</a>
+          </li>
+          <li class="nav-item">
+            <a href="./mindfulness.html" class="nav-link">Mindfulness</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="calculator-section">
+        <h1>Calorie & Nutrition Calculator</h1>
+        <h3>Calculate your daily caloric needs and macronutrient breakdown</h3>
+
+        <div class="calculator-container">
+          <h2>Enter Your Information</h2>
+          <form id="calcForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="age">Age (years)</label>
+                <input type="number" id="age" required />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" required />
+              </div>
+              <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="activity">Activity Level</label>
+              <select id="activity" required>
+                <option value="1.2">Sedentary (little/no exercise)</option>
+                <option value="1.375">Lightly active (1–3 days/week)</option>
+                <option value="1.55">Moderately active (3–5 days/week)</option>
+                <option value="1.725">Very active (6–7 days/week)</option>
+                <option value="1.9">Super active (hard exercise/job)</option>
+              </select>
+            </div>
+
+            <button type="submit">
+              <span class="button-text">Calculate Results</span>
+            </button>
+          </form>
+
+          <div id="results" class="result" style="display: none">
+            <h3>Your Results</h3>
+            <p><strong>BMR:</strong> <span id="bmr"></span> kcal/day</p>
+            <p><strong>TDEE:</strong> <span id="tdee"></span> kcal/day</p>
+            <h4>Macronutrient Breakdown</h4>
+            <div class="bar"><div class="bar-fill carbs" id="carbs"></div></div>
+            <div class="bar">
+              <div class="bar-fill protein" id="protein"></div>
+            </div>
+            <div class="bar"><div class="bar-fill fat" id="fat"></div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/GreenBite logo.png"
+                alt="GreenBite Logo"
+                class="footer-logo-img"
+              />
+              <h3>GreenBite</h3>
+            </div>
+            <p>
+              Empowering your wellness journey through balanced nutrition,
+              mindful movement, and holistic health practices. Transform your
+              life one healthy choice at a time.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link facebook">ⓕ</a>
+              <a href="https://twitter.com" class="social-link twitter">𝕏</a>
+              <a href="https://instagram.com" class="social-link instagram"
+                >🅾</a
+              >
+              <a href="https://youtube.com" class="social-link youtube">[in]</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#nutrition">Nutrition</a></li>
+              <li><a href="#workout">Workout</a></li>
+              <li><a href="#mindfulness">Mindfulness</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <p>Email: hello@greenbite.com</p>
+              <p>Phone: +94 123 345 45</p>
+              <p>Address: 123 Sri Lanka, Colombo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 GreenBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/calculator.js"></script>
+  </body>
+</html>
