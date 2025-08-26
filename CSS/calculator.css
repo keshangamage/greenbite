@@ -92,6 +92,12 @@ body::after {
 }
 
 #calcForm select {
+  padding: 10px 60px;
+  height: 48px;
+  font-size: 16px;
+}
+
+#calcForm select {
   background-position: right 12px center;
   background-repeat: no-repeat;
   background-size: 16px;
