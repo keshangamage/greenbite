@@ -6,6 +6,7 @@
     <title>Mindfulness | GreenBite</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/mindfulness.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
     <link
       rel="icon"
       href="./assets/GreenBite logo.png"
@@ -46,6 +47,101 @@
       </div>
     </nav>
 
-    <h1>hi</h1>
+    <main>
+      <section class="mindfulness-section">
+        <h1>Mindfulness Center</h1>
+        <h3>
+          Find your inner peace with guided breathing, meditation, and
+          relaxation tools
+        </h3>
+
+        <div class="breathing-timer-container">
+          <h2>Breathing & Meditation</h2>
+
+          <div class="breathing-timer-content">
+            <!-- Breathing Animation -->
+            <div class="breathing-section">
+              <div class="circle"></div>
+              <p id="breathing-text">Breathe In</p>
+            </div>
+
+            <!-- Meditation Timer -->
+            <div class="timer-section">
+              <p>Time Left: <span id="time-left">60</span>s</p>
+              <div class="timer-controls">
+                <button id="start-timer">Start</button>
+                <button id="reset-timer">Reset</button>
+              </div>
+              <p>Completed Sessions: <span id="completed">0</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambient Sounds -->
+        <div class="sound-container">
+          <h2>Ambient Sounds</h2>
+          <div class="sound-controls">
+            <button id="play-sound">🎵 Play Sound</button>
+            <button id="stop-sound">⏹️ Stop Sound</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/GreenBite logo.png"
+                alt="GreenBite Logo"
+                class="footer-logo-img"
+              />
+              <h3>GreenBite</h3>
+            </div>
+            <p>
+              Empowering your wellness journey through balanced nutrition,
+              mindful movement, and holistic health practices. Transform your
+              life one healthy choice at a time.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link facebook">ⓕ</a>
+              <a href="https://twitter.com" class="social-link twitter">𝕏</a>
+              <a href="https://instagram.com" class="social-link instagram"
+                >🅾</a
+              >
+              <a href="https://youtube.com" class="social-link youtube">[in]</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#nutrition">Nutrition</a></li>
+              <li><a href="#workout">Workout</a></li>
+              <li><a href="#mindfulness">Mindfulness</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <p>Email: hello@greenbite.com</p>
+              <p>Phone: +94 123 345 45</p>
+              <p>Address: 123 Sri Lanka, Colombo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 GreenBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/mindfulness.js"></script>
   </body>
 </html>
