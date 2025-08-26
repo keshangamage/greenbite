@@ -6,6 +6,7 @@
     <title>Contact | GreenBite</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/contact.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
     <link
       rel="icon"
       href="./assets/GreenBite logo.png"
@@ -46,6 +47,136 @@
       </div>
     </nav>
 
-    <h1>hi</h1>
+    <main>
+      <section class="contact-section">
+        <h1>Contact & Feedback</h1>
+        <h3>Get in touch with us or find answers to common questions</h3>
+      </section>
+
+      <section class="contact-container">
+        <!-- Contact Form -->
+        <div class="form-section">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <input type="text" id="subject" placeholder="Subject" required />
+            <textarea
+              id="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="formResponse" class="form-response"></p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="info-section">
+          <h2>Get in Touch</h2>
+          <p><strong>Email:</strong> hello@greenbite.com</p>
+          <p><strong>Phone:</strong> +94 123 345 45</p>
+          <p><strong>Address:</strong> 123, Sri Lanka, Colombo</p>
+
+          <!--Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63313.48650977813!2d79.8120634!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593f13dfb6ed%3A0x9f64c0a6b3e1f8b1!2sColombo!5e0!3m2!1sen!2slk!4v1682605830024!5m2!1sen!2slk"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ-->
+      <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <button class="accordion-btn">What is GreenBite?</button>
+          <div class="accordion-content">
+            <p>
+              GreenBite is a wellness brand promoting healthy living through
+              meals, exercise, and mindfulness.
+            </p>
+          </div>
+
+          <button class="accordion-btn">How do I contact support?</button>
+          <div class="accordion-content">
+            <p>You can reach us via hello@greenbite.com or our hotline.</p>
+          </div>
+
+          <button class="accordion-btn">Is the service free?</button>
+          <div class="accordion-content">
+            <p>Yes, most of our tools are free to use online.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/GreenBite logo.png"
+                alt="GreenBite Logo"
+                class="footer-logo-img"
+              />
+              <h3>GreenBite</h3>
+            </div>
+            <p>
+              Empowering your wellness journey through balanced nutrition,
+              mindful movement, and holistic health practices. Transform your
+              life one healthy choice at a time.
+            </p>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link facebook">ⓕ</a>
+              <a href="https://twitter.com" class="social-link twitter">𝕏</a>
+              <a href="https://instagram.com" class="social-link instagram"
+                >🅾</a
+              >
+              <a href="https://youtube.com" class="social-link youtube">[in]</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+              <li><a href="#nutrition">Nutrition</a></li>
+              <li><a href="#workout">Workout</a></li>
+              <li><a href="#mindfulness">Mindfulness</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="contact-info">
+              <p>Email: hello@greenbite.com</p>
+              <p>Phone: +94 123 345 45</p>
+              <p>Address: 123 Sri Lanka, Colombo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 GreenBite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/contact.js"></script>
   </body>
 </html>
