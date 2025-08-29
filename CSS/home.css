@@ -344,6 +344,13 @@
   transform: scale(1.2);
 }
 
+.social-link img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  filter: none;
+}
+
 .social-link.facebook {
   color: #1877f2;
 }
