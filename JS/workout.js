@@ -74,3 +74,31 @@ function resetTimer() {
 
 startBtn.addEventListener("click", startTimer);
 resetBtn.addEventListener("click", resetTimer);
+
+// Hamburger menu
+(function initHamburgerMenu() {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  if (!hamburger || !navMenu) return;
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  });
+})();
