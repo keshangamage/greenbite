@@ -53,9 +53,7 @@ resetButton.addEventListener("click", resetTimer);
 const playButton = document.getElementById("play-sound");
 const stopButton = document.getElementById("stop-sound");
 
-const backgroundAudio = new Audio(
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-);
+const backgroundAudio = new Audio("./Audio/rain.mp3");
 
 // Play sound function
 playButton.addEventListener("click", function () {

@@ -19,7 +19,7 @@ h1 {
   margin: 0;
 }
 
-body::before {
+body.home::before {
   content: "";
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ body::before {
   z-index: -1;
 }
 
-body::after {
+body.home::after {
   content: "";
   position: fixed;
   top: 0;
