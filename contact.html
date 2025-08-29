@@ -24,7 +24,18 @@
             class="logo-img"
           />
         </div>
-        <ul class="nav-menu">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Home</a>
           </li>
@@ -44,6 +55,7 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
+        <div class="nav-backdrop" aria-hidden="true"></div>
       </div>
     </nav>
 
@@ -88,9 +100,7 @@
           <div class="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63313.48650977813!2d79.8120634!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593f13dfb6ed%3A0x9f64c0a6b3e1f8b1!2sColombo!5e0!3m2!1sen!2slk!4v1682605830024!5m2!1sen!2slk"
-              width="100%"
-              height="200"
-              style="border: 0"
+              title="Map showing Colombo, Sri Lanka"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
