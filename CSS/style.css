@@ -162,6 +162,12 @@ main {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+  body.home::before {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
   .nav-container {
     padding: 0 20px;
     height: 56px;
@@ -250,6 +256,12 @@ main {
 }
 
 @media (max-width: 480px) {
+  body.home::before {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
   .nav-container {
     padding: 0 16px;
   }

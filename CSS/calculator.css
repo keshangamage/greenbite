@@ -77,7 +77,7 @@ body::after {
   letter-spacing: 0.5px;
 }
 
-#calcForm input,
+#calcForm input:not([type="radio"]):not([type="checkbox"]),
 #calcForm select {
   width: 100%;
   padding: 10px 14px;
@@ -95,6 +95,12 @@ body::after {
   padding: 10px 60px;
   height: 48px;
   font-size: 16px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M6 9l6 6 6-6' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 }
 
 #calcForm select {
@@ -103,7 +109,11 @@ body::after {
   background-size: 16px;
 }
 
-#calcForm input:focus,
+select::-ms-expand {
+  display: none;
+}
+
+#calcForm input:not([type="radio"]):not([type="checkbox"]):focus,
 #calcForm select:focus {
   outline: none;
   border-color: #1dbc57;
