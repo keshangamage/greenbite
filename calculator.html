@@ -24,7 +24,18 @@
             class="logo-img"
           />
         </div>
-        <ul class="nav-menu">
+
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="primary-navigation">
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Home</a>
           </li>
@@ -44,6 +55,8 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
+
+        <div class="nav-backdrop" aria-hidden="true"></div>
       </div>
     </nav>
 
@@ -96,7 +109,7 @@
             </button>
           </form>
 
-          <div id="results" class="result" style="display: none">
+          <div id="results" class="result">
             <h3>Your Results</h3>
             <p><strong>BMR:</strong> <span id="bmr"></span> kcal/day</p>
             <p><strong>TDEE:</strong> <span id="tdee"></span> kcal/day</p>
