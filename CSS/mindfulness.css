@@ -199,3 +199,83 @@ body::after {
 .sound-container button:active {
   transform: translateY(0);
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .mindfulness-section {
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .mindfulness-section h1 {
+    font-size: 28px;
+  }
+
+  .mindfulness-section h3 {
+    font-size: 15px;
+    margin-bottom: 24px;
+    padding: 0 6px;
+  }
+
+  .breathing-timer-container {
+    padding: 24px;
+    margin: 24px auto;
+  }
+
+  .breathing-timer-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .breathing-section {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 16px;
+  }
+
+  .timer-section {
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  #time-left {
+    font-size: 34px;
+  }
+
+  .sound-container {
+    margin: 20px auto 8px;
+    padding: 24px;
+  }
+
+  .sound-controls {
+    gap: 10px;
+  }
+
+  .sound-container button {
+    min-width: 110px;
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .circle {
+    width: 84px;
+    height: 84px;
+  }
+
+  #breathing-text {
+    font-size: 16px;
+  }
+
+  .timer-controls button {
+    padding: 9px 16px;
+    font-size: 13.5px;
+  }
+}

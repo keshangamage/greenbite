@@ -24,7 +24,18 @@
             class="logo-img"
           />
         </div>
-        <ul class="nav-menu">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Home</a>
           </li>
@@ -44,6 +55,7 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
+        <div class="nav-backdrop" aria-hidden="true"></div>
       </div>
     </nav>
 
