@@ -23,7 +23,18 @@
             class="logo-img"
           />
         </div>
-        <ul class="nav-menu">
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
           <li class="nav-item">
             <a href="#home" class="nav-link">Home</a>
           </li>
@@ -43,6 +54,7 @@
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
+        <div class="nav-backdrop" aria-hidden="true"></div>
       </div>
     </nav>
 
@@ -50,7 +62,7 @@
       <h1>Welcome to <span class="green-text">GreenBite</span></h1>
       <h3 id="rotating-subtitle">Your Journey to Vibrant Health Starts Here</h3>
       <div class="hero-buttons">
-        <a href="./Recipes.html" class="hero-button first"
+  <a href="./recipes.html" class="hero-button first"
           >Start Your Journey</a
         >
         <button class="hero-button second">Learn More</button>
@@ -107,6 +119,9 @@
                 type="email"
                 class="newsletter-input"
                 placeholder="Enter your email"
+                inputmode="email"
+                autocomplete="email"
+                aria-label="Email address"
                 required
               />
               <button type="submit" class="newsletter-button">Subscribe</button>
