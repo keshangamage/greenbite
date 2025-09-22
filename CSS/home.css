@@ -64,8 +64,8 @@
 }
 
 .hero-button.first {
-  background: #1ca949;
-  color: white;
+  background: #22d35a;
+  color: #292929;
 }
 
 .hero-button.first:hover {
@@ -107,13 +107,13 @@
   font-weight: 800;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
-  color: #1ca949;
+  color: #157a35;
 }
 
 .section-description {
   text-align: center;
   font-size: 1.2rem;
-  color: #64748b;
+  color: #383f4d;
   margin-bottom: 4rem;
   max-width: 700px;
   margin-left: auto;
@@ -216,7 +216,7 @@
 .newsletter-section p {
   font-size: 16px;
 
-  color: #697487;
+  color: #414953;
 
   margin-bottom: 40px;
 
@@ -266,8 +266,8 @@
   padding: 8px 16px;
   font-size: 12px;
   font-weight: 500;
-  background: #38a169;
-  color: white;
+  background: #64c990;
+  color: #1f1f1f;
   border: none;
   border-radius: 8px;
   cursor: pointer;
