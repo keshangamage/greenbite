@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contactForm");
   initHamburgerMenu();
 
+  if (!contactForm) {
+    console.warn("Contact form element not found.");
+    return;
+  }
+
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -107,7 +112,7 @@ function closeAllAccordions() {
 }
 
 // Hamburger menu
-(function initHamburgerMenu() {
+function initHamburgerMenu() {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -132,4 +137,4 @@ function closeAllAccordions() {
       navMenu.classList.remove("active");
     }
   });
-})();
+}
