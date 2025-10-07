@@ -48,7 +48,34 @@ function initHamburgerMenu() {
   }
 }
 
+function initNewsletterSignup() {
+  const form = document.querySelector(".newsletter-form");
+  const emailInput = form?.querySelector(".newsletter-input");
+
+  if (!form || !emailInput) {
+    return;
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+
+    if (!email) {
+      emailInput.focus();
+      return;
+    }
+
+    localStorage.setItem("greenbiteNewsletterEmail", email);
+
+    form.reset();
+
+    alert("Thanks for subscribing! We'll keep you posted.");
+  });
+}
+
 window.onload = function () {
   setInterval(changeSubtitle, 3000);
   initHamburgerMenu();
+  initNewsletterSignup();
 };
